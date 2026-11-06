@@ -47,7 +47,7 @@ Built using an asynchronous **Streamlit** frontend and a normalized **SQLite** r
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/wisabuilds/PUIT-Assignment2-Hospital-Management.git
+git clone https://github.com/s47user/PUIT-Assignment2-Hospital-Management.git
 cd PUIT-Assignment2-Hospital-Management
 
 # 2. Install dependencies
