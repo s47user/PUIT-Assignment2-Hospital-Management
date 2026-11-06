@@ -59,8 +59,3 @@ python init_db.py
 # 4. Launch Streamlit Application
 streamlit run app.py
 ```
-
----
-
-## 👨‍🏫 Lecturer / Collaborator Notice
-As instructed by **Mr. Harry Attieku-Boateng**, this project is tracked under Git version control. The lecturer can be invited as a collaborator directly on GitHub.
