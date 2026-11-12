@@ -42,49 +42,30 @@ st.markdown("""
         background-color: #F8FAFC;
     }
 
-    /* Top Brand Hero Banner */
-    .hero-banner {
-        background: #0F2942;
-        border: 1px solid #1E3A5F;
-        border-radius: 12px;
-        padding: 24px 28px;
+    /* Page Header */
+    .page-header {
+        border-bottom: 1px solid #E2E8F0;
+        padding-bottom: 16px;
         margin-bottom: 24px;
-        color: #FFFFFF;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
-    .hero-banner h1 {
-        font-size: 1.65rem;
+    .page-breadcrumbs {
+        font-size: 0.82rem;
+        font-weight: 500;
+        color: #64748B;
+        margin-bottom: 4px;
+    }
+    .page-title {
+        font-size: 1.6rem;
         font-weight: 700;
         letter-spacing: -0.02em;
         margin: 0 0 6px 0;
-        color: #FFFFFF;
+        color: #0F172A;
     }
-    .hero-banner p {
-        font-size: 0.92rem;
-        color: #94A3B8;
+    .page-subtitle {
+        font-size: 0.90rem;
+        color: #64748B;
         margin: 0;
         line-height: 1.5;
-    }
-    .hero-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 14px;
-    }
-    .hero-tag {
-        font-size: 0.76rem;
-        font-weight: 600;
-        padding: 3px 10px;
-        border-radius: 6px;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        color: #E2E8F0;
-        font-family: 'JetBrains Mono', monospace;
-    }
-    .hero-tag-live {
-        background: rgba(16, 185, 129, 0.15);
-        border-color: rgba(16, 185, 129, 0.35);
-        color: #34D399;
     }
 
     /* Metric Cards */
@@ -265,15 +246,10 @@ with st.sidebar:
 # -----------------------------------------------------------------------------
 if menu == "📊 Executive Dashboard":
     st.markdown(r"""
-    <div class="hero-banner">
-        <h1>🏥 Executive Hospital Operations Dashboard</h1>
-        <p>Real-time inpatient throughput, demographic cohorts, physiological urgency triage, and Ghana NHIS copay claims analytics.</p>
-        <div class="hero-tags">
-            <span class="hero-tag hero-tag-live">● System Live (SQLite 3-Tier)</span>
-            <span class="hero-tag">Accra Main Campus OPD</span>
-            <span class="hero-tag">Ghana NHIS 70% Subsidy Engine</span>
-            <span class="hero-tag">WHO BMI Triage Active</span>
-        </div>
+    <div class="page-header">
+        <div class="page-breadcrumbs">Pentecost University Hospital / Operations</div>
+        <h1 class="page-title">Executive Operations Dashboard</h1>
+        <p class="page-subtitle">Real-time inpatient throughput, demographic cohorts, physiological urgency triage, and Ghana NHIS copay claims analytics.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -413,9 +389,10 @@ if menu == "📊 Executive Dashboard":
 # -----------------------------------------------------------------------------
 elif menu == "🏥 Patient Registration & EMR":
     st.markdown(r"""
-    <div class="hero-banner">
-        <h1>🏥 Patient Registration & Electronic Medical Records</h1>
-        <p>Enroll new clinical cases, assign unique Medical Record Codes, link Ghana National Health Insurance identities, and search directory profiles.</p>
+    <div class="page-header">
+        <div class="page-breadcrumbs">Pentecost University Hospital / Medical Records</div>
+        <h1 class="page-title">Patient Registration & Electronic Medical Records</h1>
+        <p class="page-subtitle">Enroll new clinical cases, assign unique Medical Record Codes, link Ghana National Health Insurance identities, and search directory profiles.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -509,9 +486,10 @@ elif menu == "🏥 Patient Registration & EMR":
 # -----------------------------------------------------------------------------
 elif menu == "🩺 Triage & Clinical Vitals":
     st.markdown(r"""
-    <div class="hero-banner">
-        <h1>🩺 Clinical Vitals & Automated Triage Station</h1>
-        <p>Perform physiological triage screening, calculate WHO-standard BMI automatically, and classify patients by immediate urgency.</p>
+    <div class="page-header">
+        <div class="page-breadcrumbs">Pentecost University Hospital / Outpatient Triage</div>
+        <h1 class="page-title">Clinical Vitals & Automated Triage Station</h1>
+        <p class="page-subtitle">Perform physiological triage screening, calculate WHO-standard BMI automatically, and classify patients by immediate urgency.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -620,9 +598,10 @@ elif menu == "🩺 Triage & Clinical Vitals":
 # -----------------------------------------------------------------------------
 elif menu == "👨‍⚕️ Doctor Consultation & Diagnosis":
     st.markdown(r"""
-    <div class="hero-banner">
-        <h1>👨‍⚕️ Clinical Consultation & Physician Encounter</h1>
-        <p>Review electronic health history, capture presenting complaints, record definitive ICD diagnoses, and issue pharmaceutical prescriptions.</p>
+    <div class="page-header">
+        <div class="page-breadcrumbs">Pentecost University Hospital / Clinical Practice</div>
+        <h1 class="page-title">Physician Consultation & Diagnosis</h1>
+        <p class="page-subtitle">Review electronic health history, capture presenting complaints, record definitive ICD diagnoses, and issue pharmaceutical prescriptions.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -694,9 +673,10 @@ elif menu == "👨‍⚕️ Doctor Consultation & Diagnosis":
 # -----------------------------------------------------------------------------
 elif menu == "📅 Outpatient Appointments":
     st.markdown(r"""
-    <div class="hero-banner">
-        <h1>📅 Outpatient Appointment Management</h1>
-        <p>Coordinate specialist consultations, track patient clinic follow-ups, and review master outpatient schedules.</p>
+    <div class="page-header">
+        <div class="page-breadcrumbs">Pentecost University Hospital / Outpatient Services</div>
+        <h1 class="page-title">Outpatient Appointment Management</h1>
+        <p class="page-subtitle">Coordinate specialist consultations, track patient clinic follow-ups, and review master outpatient schedules.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -774,9 +754,10 @@ elif menu == "📅 Outpatient Appointments":
 # -----------------------------------------------------------------------------
 elif menu == "💳 Billing & NHIS Claims":
     st.markdown(r"""
-    <div class="hero-banner">
-        <h1>💳 Revenue, Billing & Ghana NHIS Claims Management</h1>
-        <p>Audit hospital accounts, compute 70% National Health Insurance Scheme medical subsidies, and settle patient copays.</p>
+    <div class="page-header">
+        <div class="page-breadcrumbs">Pentecost University Hospital / Revenue & Insurance</div>
+        <h1 class="page-title">Billing & Ghana NHIS Claims Management</h1>
+        <p class="page-subtitle">Audit hospital accounts, compute 70% National Health Insurance Scheme medical subsidies, and settle patient copays.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -940,9 +921,10 @@ elif menu == "💳 Billing & NHIS Claims":
 # -----------------------------------------------------------------------------
 elif menu == "📑 System Architecture & Docs":
     st.markdown(r"""
-    <div class="hero-banner">
-        <h1>📑 System Architecture & Technical Specification</h1>
-        <p>Comprehensive engineering blueprint, Ghana NHIS mathematical balance proofs, triage algorithms, and course assessment credentials.</p>
+    <div class="page-header">
+        <div class="page-breadcrumbs">Pentecost University Hospital / Technical Documentation</div>
+        <h1 class="page-title">System Architecture & Technical Specification</h1>
+        <p class="page-subtitle">Comprehensive engineering blueprint, Ghana NHIS mathematical balance proofs, triage algorithms, and course assessment credentials.</p>
     </div>
     """, unsafe_allow_html=True)
 
